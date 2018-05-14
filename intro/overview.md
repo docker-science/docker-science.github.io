@@ -3,13 +3,13 @@ layout: page
 title: Cookiecutter Docker Science - Intro
 ---
 
-# Cookiecutter Docker Science
+# Getting Started
 
-## Getting Started
+## Requirements
 
-### Requirements
+## Quick Start
 
-### How to Build
+# How to Build
 
-## How to contribute
+# How to contribute
 
