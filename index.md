@@ -29,8 +29,15 @@ simple machine learning tasks.
 
 # Cycle of Machine Learning projects
 
+Machine learning projects consist of three steps (Experiments, Code simplification, and Deployment).
+The following is the image of the cycle.
+
 <img src="resources/images/cycle-of-ml.jpg" style="width: 75%;" />
 
+In the begging we do experiments in Jupyter Notebook interactively. Then we simplify the code written in the notebooks.
+In this step, add test, refactor code, apply linter, make library and CI. After we finished the code simplification, we deploy the model
+to production use. In this phase, we add batch scripts or service using the library created at the previous step. After deployment,
+we continue the improvement of model in Jupyter Notebook again.
 
 # Work in Docker container in every step of the Machine Learning project
 
