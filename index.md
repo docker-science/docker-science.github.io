@@ -48,3 +48,11 @@ since we can begin code simplification and deployment seamlessly. The following 
 <img src="resources/images/work-in-docker.jpg" style="width: 75%;" />
 
 Cookiecutter Docker Science support the machine learning project from the experiments to deployment with Docker container.
+
+
+# Work with Cookiecutter Docker Science
+
+## Directory structure
+
+## Work in each step (experiment, code simplification, and deployment)
+
