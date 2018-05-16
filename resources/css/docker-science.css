@@ -209,7 +209,6 @@ img::-moz-selection {
   text-transform: uppercase;
   white-space: nowrap;
   overflow-x: hidden;
-  text-overflow: ellipsis;
   font-size:0.8em;
 }
 
