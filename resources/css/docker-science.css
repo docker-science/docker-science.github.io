@@ -194,7 +194,7 @@ img::-moz-selection {
   z-index: 1000;
   top: 0;
   left: 0;
-  width: 33%;
+  width: 25%;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -250,13 +250,13 @@ a.anchor {
 }
 
 .anchorific {
-  width: 340px;
+  width: 600px;
   overflow-y: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   padding: 0;
   padding-right: 8px;
-  float: right;
+  float: left;
 }
 
 .anchorific ul {
