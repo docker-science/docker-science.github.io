@@ -52,12 +52,16 @@ Cookiecutter Docker Science support the machine learning project from the experi
 
 # Usage: Cookiecutter Docker Science
 
+This section described the usage of Cookiecutter Docker Science.
+
+
 ## Requirements
+
+Cookiecutter Docker Science need the followings.
 
 - Python 2.7 or Python 3.5
 - Cookiecutter 1.6 or later
 - Docker version 17 or later
-
 
 ## Getting Started
 
@@ -79,6 +83,29 @@ data_source [Please Input data source in S3]: s3://research-data/food-images
 ```
 
 ## Directory structure
+
+When we generate a project with Cookiecutter Docker Science, the project has the following files and directories.
+
+```
+├── Makefile                          <- Makefile contains many targets such as create docker container or
+│                                        get input files.
+├── config                            <- This directory contains configuration files used in scripts
+│   │                                    or Jupyter Notebook.
+│   └── jupyter_config.py
+├── data                              <- data directory contains the input resources.
+├── docker                            <- docker directory contains Dockerfile.
+│   └── Dockerfile                    <- Dockerfile have the container settings. Users modify Dockerfile
+│                                        if additional library is needed for experiments.
+├── model                             <- model directory store the model files created in the experiments.
+├── my_data_science_project           <- cookie-cutter-docker-science creates the directory whose name is same
+│   │                                    as project name. In this directory users puts python files used in scripts
+│   │                                    or Jupyter Notebook.
+│   └── __init__.py
+├── notebook                          <- This directory sotres the ipynb files saved in Jupyter Notebook.
+├── requirements.txt                  <- Libraries needed to run experiments. The library listed in this file
+│                                        are installed in the Docker container.
+└── scripts                           <- Users add the script files to generate model files or run evaluation. 
+```
 
 ## Work in each step (experiment, code simplification, and deployment)
 
