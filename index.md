@@ -110,5 +110,21 @@ When we generate a project with Cookiecutter Docker Science, the project has the
 └── scripts                           <- Users add the script files to generate model files or run evaluation. 
 ```
 
-## Work in each step (experiment, code simplification, and deployment)
+## Work in each step (experiments, code simplification, and deployment)
 
+Machine learning projects consist of three phases (**experiments**, **code simplification**, and **deployment**).
+Cookiecutter Docker Science supports machine learning projects in all three phases.
+
+### Experiments
+
+Projects start from exploratory experiments. This phase data scientists analysis given data in Jupyter Notebook interactively.
+Cookiecutter Docker Science launches the Jupyter Notebook server in the container with `make jupyter` command. Note that
+port forward setting to connect the port Docker container to host PC is setup by Cookiecutter Docker Science.  
+
+Users create notebooks in `notebook` directory and store the results of analysis.
+
+### Code simplification
+
+In the code simplification phase, users extract code to the library directory.
+
+### Deployment 
