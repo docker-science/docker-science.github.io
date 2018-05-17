@@ -107,7 +107,8 @@ When we generate a project with Cookiecutter Docker Science, the project has the
 ├── notebook                          <- This directory sotres the ipynb files saved in Jupyter Notebook.
 ├── requirements.txt                  <- Libraries needed to run experiments. The library listed in this file
 │                                        are installed in the Docker container.
-└── scripts                           <- Users add the script files to generate model files or run evaluation. 
+├── scripts                           <- Users add the script files to generate model files or run evaluation.
+└── tests                             <- tests directory stores test codes and the fixture files.
 ```
 
 ## Work in each step (experiments, code simplification, and deployment)
@@ -125,6 +126,18 @@ Users create notebooks in `notebook` directory and store the results of analysis
 
 ### Code simplification
 
-In the code simplification phase, users extract code to the library directory.
+In the code simplification phase, users extract code used in the experiments to the library directory.
+The library codes are stored in library directory (commonly project name directory).
+
+Then software engineers refactor codes and add tests. The test files are stored in `tests` directory.
+The flows to generate the model files are added in `Makefile` as the targets.
+Adding the make targets we can generate the model with just `make` command.   
 
 ### Deployment 
+
+After code simplification phase, we deploy the model to the service or batch script.
+We can make use of the project since the directories in the projects
+are the same and we are able to generate model with the `make` command.
+
+When we use the project as a library, Cookiecutter Docker Science provide `setup.py` 
+to upload the library to (internal) pypi repository. 
