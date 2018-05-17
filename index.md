@@ -17,6 +17,9 @@ By contrast, we can creates the identical Docker container in which needed tools
 already installed in one command without changing system libraries in host machines. This aspect of Docker is
 important for reproducibility of experiments, and keep the projects in continuous integration systems.
 
+<img src="resources/images/docker-container.jpg" style="width: 75%;" />
+
+
 However working in a Docker containers is troublesome. Adding a new library into requirements.txt
 or Dockerfile does not installed as if local machine. We need to create Docker image and container each time. We also need
 to forward ports to see server responses such as Jupyter Notebook UI launch in Docker container in our local PC.
