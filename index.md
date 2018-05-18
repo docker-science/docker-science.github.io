@@ -32,7 +32,7 @@ simple machine learning tasks.
 
 # Cycle of Machine Learning projects
 
-Machine learning projects consist of three steps (Experiments, Code simplification, and Deployment).
+Machine learning projects consist of three steps (**Experiments**, **Code simplification**, and **Deployment**).
 The following is the image of the cycle.
 
 <img src="resources/images/cycle-of-ml.jpg" style="width: 75%;" />
@@ -120,9 +120,9 @@ When we generate a project with Cookiecutter Docker Science, the project has the
 └── tests                             <- tests directory stores test codes and the fixture files.
 ```
 
-## Work in each step (experiments, code simplification, and deployment)
+# Consistent support throughout ML projects
 
-Machine learning projects consist of three phases (**experiments**, **code simplification**, and **deployment**).
+As described in the previous section, machine learning projects consist of three phases (**experiments**, **code simplification**, and **deployment**).
 Cookiecutter Docker Science supports machine learning projects in all three phases.
 
 ### Experiments
