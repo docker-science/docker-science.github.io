@@ -66,7 +66,7 @@ Cookiecutter Docker Science need the followings.
 - Cookiecutter 1.6 or later
 - Docker version 17 or later
 
-## Getting Started
+## Generate new project
 
 To generate project from the cookiecutter-doccker-science template, please run the following command.
 
@@ -84,6 +84,15 @@ jupyter_host_port [8888]:
 description [Please Input a short description]: Classify food images into several categories
 data_source [Please Input data source in S3]: s3://research-data/food-images
 ```
+
+<a href="https://asciinema.org/a/6XV9dNixtzfUwWdoqLj7HG7A2" target="_blank"><img style="width: 100%;"  src="https://asciinema.org/a/6XV9dNixtzfUwWdoqLj7HG7A2.png" /></a>
+
+## Create Docker Container
+
+The following movie is a sample to create a Docker image and container and then launch Jupyter Notebook in the container.
+
+<a href="https://asciinema.org/a/06CcXPubAj3RSiMSTy3CZDrfG" target="_blank"><img style="width: 100%;" src="https://asciinema.org/a/06CcXPubAj3RSiMSTy3CZDrfG.png" /></a>
+
 
 ## Directory structure
 
