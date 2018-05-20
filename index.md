@@ -7,7 +7,7 @@ title: Home
 
 [![Build Status](https://travis-ci.org/docker-science/cookiecutter-docker-science.svg?branch=master)](https://travis-ci.org/docker-science/cookiecutter-docker-science)
 
-Some researchers and software engineers do many machine learning or data mining tasks.
+Data scientists do many machine learning or data mining tasks.
 For such data engineering tasks, researchers apply various tools and system libraries, 
 which are constantly updated. Unfortunately installing and updating them cause problems in local environments.
 Even when we work in hosting environments such as EC2, we are not free from this problem. Some experiments
@@ -30,9 +30,9 @@ In machine learning tasks, projects glow uniquely to fit target tasks, but in th
 structure and targets in Makefile are common. Cookiecutter Docker Science generates initial directories which fits
 simple machine learning tasks.
 
-# Cycle of Machine Learning projects
+# Cycle of a project
 
-Machine learning projects consist of three steps (**Experiments**, **Code simplification**, and **Deployment**).
+Machine learning projects consist of three phases (**Experiments**, **Code simplification**, and **Deployment**).
 The following is the image of the cycle.
 
 <img src="resources/images/cycle-of-ml.jpg" style="width: 75%;" />

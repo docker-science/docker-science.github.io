@@ -220,7 +220,7 @@ img::-moz-selection {
 
 .docker-science-page-content {
   margin-left: 33%;
-  max-width: 900px;
+  max-width: 60%;
   padding: 15px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -235,6 +235,7 @@ img::-moz-selection {
 
   .docker-science-page-content {
     margin-left: 0 !important;
+    max-width: 100%;
   }
 }
 
