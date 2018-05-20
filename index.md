@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-# Overview
+# Cookiecutter Docker Science
 
 [![Build Status](https://travis-ci.org/docker-science/cookiecutter-docker-science.svg?branch=master)](https://travis-ci.org/docker-science/cookiecutter-docker-science)
 
@@ -53,7 +53,7 @@ since we can begin code simplification and deployment seamlessly. The following 
 Cookiecutter Docker Science support the machine learning project from the experiments to deployment with Docker container.
 
 
-# Usage: Cookiecutter Docker Science
+# Usage
 
 This section described the usage of Cookiecutter Docker Science.
 
@@ -122,7 +122,7 @@ When we generate a project with Cookiecutter Docker Science, the project has the
 └── tests                             <- tests directory stores test codes and the fixture files.
 ```
 
-# Consistent support throughout ML projects
+# Consistent support
 
 As described in the previous section, machine learning projects consist of three phases (**experiments**, **code simplification**, and **deployment**).
 Cookiecutter Docker Science supports machine learning projects in all three phases.
