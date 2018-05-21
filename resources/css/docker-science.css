@@ -211,13 +211,6 @@ img::-moz-selection {
   font-size:0.8em;
 }
 
-.docker-science-fixed-footer {
-  position: absolute;
-  bottom: 0;
-  left: 6px;
-  font-size: 11px;
-}
-
 .docker-science-page-content {
   margin-left: 33%;
   max-width: 60%;
