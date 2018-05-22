@@ -17,7 +17,7 @@ By contrast, we can creates the identical Docker container in which needed tools
 already installed in one command without changing system libraries in host machines. This aspect of Docker is
 important for reproducibility of experiments, and keep the projects in continuous integration systems.
 
-<img src="resources/images/docker-container.jpg" style="width: 75%;" />
+<img src="resources/images/docker-container.jpg"/>
 
 
 However working in a Docker containers is troublesome. Adding a new library into requirements.txt
@@ -35,7 +35,7 @@ simple machine learning tasks.
 Machine learning projects consist of three phases (**Experiments**, **Code simplification**, and **Deployment**).
 The following is the image of the cycle.
 
-<img src="resources/images/cycle-of-ml.jpg" style="width: 75%;" />
+<img src="resources/images/cycle-of-ml.jpg"/>
 
 In the begging we do experiments in Jupyter Notebook interactively. Then we simplify the code written in the notebooks.
 In this step, add test, refactor code, apply linter, make library and CI. After we finished the code simplification, we deploy the model
@@ -48,7 +48,7 @@ Ideally, we should work in a Docker container in every step of the machine learn
 since we can begin code simplification and deployment seamlessly. The following is the image.
 
 
-<img src="resources/images/work-in-docker.jpg" style="width: 75%;" />
+<img src="resources/images/work-in-docker.jpg"/>
 
 Cookiecutter Docker Science support the machine learning project from the experiments to deployment with Docker container.
 
