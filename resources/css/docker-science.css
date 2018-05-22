@@ -14,7 +14,7 @@ h1 {
   padding-bottom: 6px;
   margin-bottom: 30px !important;
   margin-top: 40px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 h1,
@@ -31,25 +31,13 @@ h6 {
 }
 
 a {
-  color: #80591F;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  color: #442716;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
   color: #825B1F;
-}
-
-table {
-  border-spacing: 20px;
-  border-collapse: separate;
-}
-
-.light {
-  font-weight: 400;
 }
 
 .navbar-custom {
@@ -86,22 +74,14 @@ table {
   color: #fff;
 }
 
-.navbar-custom .nav li a {
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
-}
-
 .navbar-custom .nav li a:hover {
   outline: 0;
   color: rgba(255, 255, 255, .8);
-  background-color: transparent;
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
   outline: 0;
-  background-color: transparent;
 }
 
 .navbar-custom .nav li.active {
@@ -119,40 +99,6 @@ table {
 @media (min-width: 768px) {
   .navbar-custom.top-nav-collapse {
     padding: 0;
-  }
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@-moz-keyframes pulse {
-  0% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-
-  50% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -moz-transform: scale(1);
-    transform: scale(1);
   }
 }
 
@@ -191,10 +137,6 @@ img::-moz-selection {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #F5EBDC;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .docker-science-side-bar a {
@@ -208,10 +150,6 @@ img::-moz-selection {
   margin-left: 33%;
   max-width: 60%;
   padding: 15px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 @media (max-width: 768px) {
