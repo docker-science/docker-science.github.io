@@ -52,13 +52,6 @@ table {
   font-weight: 400;
 }
 
-.navbar-brand {
-  background-image: url(../images/docker-science-logo-inverse.png);
-  background-size: auto 46px;
-  background-repeat: no-repeat;
-  width: 200px;
-}
-
 .navbar-custom {
   margin-bottom: 0;
   text-transform: uppercase;
