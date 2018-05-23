@@ -152,3 +152,13 @@ are the same and we are able to generate model with the `make` command.
 
 When we use the project as a library, Cookiecutter Docker Science provide `setup.py` 
 to upload the library to (internal) pypi repository. 
+
+# License
+
+Apache version 2.0
+
+# Links
+
+- [Source code(GitHub)](https://github.com/docker-science/cookiecutter-docker-science)
+- [Slides (Cookiecutter for ML experiments with Docker)](https://speakerdeck.com/takahiko03/cookiecutter-for-ml-experiments-with-docker)
+- [Slides (Cookiecutter Template for Data Scientists Working in Docker Containers)](https://speakerdeck.com/takahiko03/cookiecutter-template-for-data-scientists-working-in-docker-containers)
