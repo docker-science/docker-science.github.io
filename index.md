@@ -13,22 +13,22 @@ which are constantly updated. Unfortunately installing and updating them cause p
 Even when we work in hosting environments such as EC2, we are not free from this problem. Some experiments
 succeeded in an instance but failed in another one, since library versions of each EC2 instances could be different.
 
-By contrast, we can creates the identical Docker container in which needed tools with the correct versions are
-already installed in one command without changing system libraries in host machines. This aspect of Docker is
-important for reproducibility of experiments, and keep the projects in continuous integration systems.
+By contrast, we can creates the identical environments with [Docker](https://www.docker.com/) in which needed tools with the correct versions are
+installed without changing system libraries in host machines.
 
 <img src="resources/images/docker-container.jpg"/>
 
+This aspect of Docker is important for reproducibility of experiments, and keep the projects in continuous integration systems.
 
 However, working in a Docker containers is troublesome. Adding a new library into `requirements.txt`
-or `Dockerfile` does not installed as if a local machine. We need to create Docker image and container each time. We also need
-to add port forward settings to see server responses such as Jupyter Notebook UI launch in Docker container from our local environments.
+or `Dockerfile` does not installed as if a local machine. Specifically we need to create a Docker image and the container each time.
+We also need to add port forward settings to see server responses such as Jupyter Notebook UI launch in Docker container from our local environments.
 Cookiecutter Docker Science provides utilities to make working in Docker container simple.
 
 This project is a tiny template for machine learning projects developed in Docker environments.
 In machine learning tasks, projects glow uniquely to fit target tasks, but in the initial state, most directory
-structure and targets in Makefile are common. Cookiecutter Docker Science generates initial directories which fits
-simple machine learning tasks.
+structure and targets in Makefile are common. [Cookiecutter Docker Science](https://github.com/docker-science/cookiecutter-docker-science)
+generates initial directories which fits simple machine learning tasks.
 
 # Cycle of a project
 
@@ -62,18 +62,18 @@ This section describes the usage of Cookiecutter Docker Science.
 Cookiecutter Docker Science need the followings.
 
 - Python 2.7 or Python 3.5
-- Cookiecutter 1.6 or later
-- Docker version 17 or later
+- [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) 1.6 or later
+- [Docker](https://www.docker.com/) version 17 or later
 
 ## Generate new project
 
-To generate project from the cookiecutter-doccker-science template, please run the following command.
+To generate project with the Cookiecutter Doccker Science template, please run the following command.
 
 ```
 $cookiecutter git@github.com:docker-science/cookiecutter-docker-science.git
 ```
 
-Then the cookiecutter command ask for several questions on generated project as follows.
+Then the cookiecutter asks for several questions on generated project as follows.
 
 ```
 $cookiecutter git@github.com:docker-science/cookiecutter-docker-science.git
