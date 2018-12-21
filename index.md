@@ -121,9 +121,11 @@ When we generate a project with Cookiecutter Docker Science, the project has the
 # Edit codes with preferred editors
 
 Cookiecutter Docker Science provides support data analysis through Makefile targets. The top level files and directories
-are mounted into the generated, and therefore edited the files in local machines are immediately reflected in the Docker container.
+are mounted into the generated, and therefore when the files are edited in local machines, the changes are
+immediately reflected in the Docker container. We just run the script in the Docker container.
 
-As the result, we can edit **any editor** as we like. Some analysis edits with PyCharm other engineers simplify the results of Jupyter Notebook with vim.
+As the result, we can edit files **any editors** as we like. Some analysis edits with PyCharm other engineers simplify
+the results of Jupyter Notebook with vim as the following image.
 
 <img src="resources/images/edit-with-preferred-editors.png"/>
 
