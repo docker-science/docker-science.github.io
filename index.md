@@ -166,6 +166,11 @@ to upload the library to (internal) pypi repository.
 
 Apache version 2.0
 
+# Projects apply Cookiecutter Docker Science
+
+- [Udacity Deep Reinforcement Learning Nanodegree Project: Reacher](https://github.com/CCThompson82/reacher) by CCThompson82 
+- [sobel filter on images](https://github.com/genkioffice/sobel) by genkioffice
+
 # Links
 
 - [Source code(GitHub)](https://github.com/docker-science/cookiecutter-docker-science)
