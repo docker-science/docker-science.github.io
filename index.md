@@ -67,8 +67,8 @@ Cookiecutter Docker Science need the followings.
 
 To generate project with the Cookiecutter Doccker Science template, please run the following command.
 
-```
-$cookiecutter git@github.com:docker-science/cookiecutter-docker-science.git
+```bash
+$ cookiecutter git@github.com:docker-science/cookiecutter-docker-science.git
 ```
 
 Then the cookiecutter asks for several questions on generated project as follows.
@@ -87,12 +87,21 @@ data_source [Please Input data source in S3]: s3://research-data/food-images
 To create a Docker image and container and then launch Jupyter Notebook in the container,
 we run `make init-docker` and `make create-container` commands in the generated project directory.
 
-```
+```bash
 $ cd food-image-classification
 $ make init-docker
 $ make create-container
 ```
 
+Now we are in Docker container.  
+
+## Run Jupyter Notebook
+
+To launch Jupyter Notebook, we run the following command. 
+
+```bash
+$ make jupyter
+```
 
 ## Directory structure
 
@@ -162,14 +171,14 @@ are the same and we are able to generate model with the `make` command.
 When we use the project as a library, Cookiecutter Docker Science provide `setup.py` 
 to upload the library to (internal) pypi repository. 
 
-# License
-
-Apache version 2.0
-
 # Projects apply Cookiecutter Docker Science
 
 - [Udacity Deep Reinforcement Learning Nanodegree Project: Reacher](https://github.com/CCThompson82/reacher) by CCThompson82 
 - [sobel filter on images](https://github.com/genkioffice/sobel) by genkioffice
+
+# License
+
+Apache version 2.0
 
 # Links
 
