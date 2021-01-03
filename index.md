@@ -115,8 +115,12 @@ When we generate a project with Cookiecutter Docker Science, the project has the
 │   └── jupyter_config.py
 ├── data                              <- data directory contains the input resources.
 ├── docker                            <- docker directory contains Dockerfile.
-│   └── Dockerfile                    <- Dockerfile have the container settings. Users modify Dockerfile
-│                                        if additional library is needed for experiments.
+│   ├── Dockerfile                    <- Base Dockerfile contains the basic settings.
+│   ├── Dockerfile.dev                <- Dockerfile for experiments this Docker image is derived from the base Docker image.
+│   │                                    This Docker image does not copy the files and directory but used mount the top
+│   │                                    directory of the host environments.
+│   └── Dockerfile.release            <- Dockerfile for production this Docker image is derived from the base Docker image.
+│                                        The Docker image copy the files and directory under the project top directory.
 ├── model                             <- model directory store the model files created in the experiments.
 ├── my_data_science_project           <- cookie-cutter-docker-science creates the directory whose name is same
 │   │                                    as project name. In this directory users puts python files used in scripts
@@ -168,8 +172,8 @@ After code simplification phase, we deploy the model to the service or batch scr
 We can make use of the project since the directories in the projects
 are the same and we are able to generate model with the `make` command.
 
-When we use the project as a library, Cookiecutter Docker Science provide `setup.py` 
-to upload the library to (internal) pypi repository. 
+Specifically we can create the production Docker images reducing libraries or settings for development uses,
+just running `make init-docker` specifying a environment variable `MODE` to `release` as `make init-docker MODE=release`.
 
 # Projects apply Cookiecutter Docker Science
 
